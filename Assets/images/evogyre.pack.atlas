@@ -1,0 +1,440 @@
+
+evogyre.pack.png
+size: 1024,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+star
+  rotate: false
+  xy: 798, 308
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: 1
+star
+  rotate: false
+  xy: 428, 265
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: 2
+star
+  rotate: false
+  xy: 213, 123
+  size: 8, 8
+  orig: 8, 8
+  offset: 0, 0
+  index: 3
+boss
+  rotate: false
+  xy: 773, 426
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: 1
+boss
+  rotate: false
+  xy: 317, 341
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: 2
+boss
+  rotate: false
+  xy: 887, 426
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: 3
+boss
+  rotate: false
+  xy: 2, 36
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: 4
+bosscore
+  rotate: false
+  xy: 210, 244
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: 1
+bosscore
+  rotate: false
+  xy: 109, 133
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: 2
+bosscore
+  rotate: false
+  xy: 431, 341
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: 3
+bosscore
+  rotate: false
+  xy: 545, 347
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: 4
+bossdamage
+  rotate: false
+  xy: 659, 347
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: 1
+bossdamage
+  rotate: false
+  xy: 773, 360
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: 2
+bossdamage
+  rotate: false
+  xy: 887, 360
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: 3
+bossdamage
+  rotate: false
+  xy: 324, 275
+  size: 112, 64
+  orig: 112, 64
+  offset: 0, 0
+  index: 4
+turret
+  rotate: false
+  xy: 808, 284
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+turretshoot
+  rotate: false
+  xy: 842, 284
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+turretturn
+  rotate: false
+  xy: 876, 284
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+turretturnshoot
+  rotate: false
+  xy: 910, 284
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+ball_inner
+  rotate: false
+  xy: 223, 160
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+ball_outer
+  rotate: false
+  xy: 273, 160
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: -1
+explosion
+  rotate: false
+  xy: 273, 160
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 4
+enemy
+  rotate: false
+  xy: 714, 305
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 1
+enemy
+  rotate: false
+  xy: 438, 265
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 2
+enemyshoot
+  rotate: false
+  xy: 480, 265
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 1
+enemyshoot
+  rotate: false
+  xy: 522, 265
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 2
+enemyturn
+  rotate: false
+  xy: 564, 255
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 1
+enemyturn
+  rotate: false
+  xy: 606, 255
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 2
+enemyturnshoot
+  rotate: false
+  xy: 648, 255
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 1
+enemyturnshoot
+  rotate: false
+  xy: 223, 118
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 2
+explosion
+  rotate: false
+  xy: 564, 297
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 1
+explosion
+  rotate: false
+  xy: 614, 297
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 2
+explosion
+  rotate: false
+  xy: 664, 297
+  size: 48, 48
+  orig: 48, 48
+  offset: 0, 0
+  index: 3
+bluepane
+  rotate: false
+  xy: 966, 326
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+bluepanedark
+  rotate: false
+  xy: 774, 271
+  size: 32, 32
+  orig: 32, 32
+  offset: 0, 0
+  index: -1
+right_arrow
+  rotate: false
+  xy: 519, 413
+  size: 252, 77
+  orig: 252, 77
+  offset: 0, 0
+  index: -1
+ship_fixed_button
+  rotate: false
+  xy: 2, 102
+  size: 105, 95
+  orig: 105, 95
+  offset: 0, 0
+  index: -1
+ship_rotate_button
+  rotate: false
+  xy: 210, 310
+  size: 105, 95
+  orig: 105, 95
+  offset: 0, 0
+  index: -1
+text_score
+  rotate: false
+  xy: 2, 2
+  size: 124, 32
+  orig: 124, 32
+  offset: 0, 0
+  index: -1
+text_shields
+  rotate: false
+  xy: 210, 210
+  size: 124, 32
+  orig: 124, 32
+  offset: 0, 0
+  index: -1
+text_weapons
+  rotate: false
+  xy: 438, 307
+  size: 124, 32
+  orig: 124, 32
+  offset: 0, 0
+  index: -1
+title_EvoGyre
+  rotate: false
+  xy: 2, 407
+  size: 515, 83
+  orig: 515, 83
+  offset: 0, 0
+  index: -1
+lavender
+  rotate: false
+  xy: 2, 199
+  size: 206, 206
+  orig: 206, 206
+  offset: 0, 0
+  index: -1
+player
+  rotate: false
+  xy: 265, 118
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 1
+player
+  rotate: false
+  xy: 690, 255
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 2
+playershoot
+  rotate: false
+  xy: 756, 305
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 1
+playershoot
+  rotate: false
+  xy: 732, 263
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 2
+playerturn
+  rotate: false
+  xy: 798, 318
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 1
+playerturn
+  rotate: false
+  xy: 840, 318
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 2
+playerturnshoot
+  rotate: false
+  xy: 882, 318
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 1
+playerturnshoot
+  rotate: false
+  xy: 924, 318
+  size: 40, 40
+  orig: 40, 40
+  offset: 0, 0
+  index: 2
+extralife
+  rotate: false
+  xy: 109, 107
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+missileammo
+  rotate: false
+  xy: 376, 249
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+points
+  rotate: false
+  xy: 161, 107
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+triplelaser
+  rotate: false
+  xy: 362, 223
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+bluelaser
+  rotate: false
+  xy: 324, 249
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+missile
+  rotate: false
+  xy: 350, 249
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: 1
+missile
+  rotate: false
+  xy: 135, 107
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: 2
+redlaser
+  rotate: false
+  xy: 402, 249
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+round_lg
+  rotate: false
+  xy: 187, 107
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+round_sm
+  rotate: false
+  xy: 944, 292
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
+sharp
+  rotate: false
+  xy: 336, 223
+  size: 24, 24
+  orig: 24, 24
+  offset: 0, 0
+  index: -1
