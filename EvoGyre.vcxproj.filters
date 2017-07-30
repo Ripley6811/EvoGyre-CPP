@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EvoGyre.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Engine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Input.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Engine\Vector3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EvoGyre\Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Interface\Spaceship.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EvoGyre\Projection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="README.md" />
+    <None Include="Assets\audio\bullet_fwap.ogg" />
+    <None Include="Assets\audio\explosion_light.ogg" />
+    <None Include="Assets\audio\explosion_lower.ogg" />
+    <None Include="Assets\audio\hit_blip.ogg" />
+    <None Include="Assets\audio\kalmankone_clip.ogg" />
+    <None Include="Assets\images\evogyre.pack.atlas" />
+    <None Include="Assets\json\enemy_weapon_setup.json" />
+    <None Include="Assets\json\level_1.json" />
+    <None Include="Assets\json\primary_weapon_setup.json" />
+    <None Include="Assets\sprites\planets\planet.psd" />
+    <None Include="Engine\SOIL\support\FreeBasic\SOIL.bi" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Engine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interface\Spaceship.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine\Vector3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EvoGyre\Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EvoGyre\Constants.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="EvoGyre\Projection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\images\evogyre.pack.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\background\star_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\background\star_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\background\star_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\shots\sharp.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\boss_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\boss_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\boss_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\boss_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\bosscore_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\bosscore_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\bosscore_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\bosscore_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\bossdamage_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\bossdamage_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\bossdamage_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\bossdamage_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\turret.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\turretshoot.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\turretturn.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\boss\turretturnshoot.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\enemy\ball_inner.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\enemy\ball_outer.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\enemy\enemy_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\enemy\enemy_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\enemy\enemyshoot_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\enemy\enemyshoot_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\enemy\enemyturn_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\enemy\enemyturn_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\enemy\enemyturnshoot_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\enemy\enemyturnshoot_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\explosion\explosion_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\explosion\explosion_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\explosion\explosion_3.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\explosion\explosion_4.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\hud\bluepane.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\hud\bluepanedark.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\hud\right_arrow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\hud\ship_fixed_button.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\hud\ship_rotate_button.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\hud\text_score.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\hud\text_shields.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\hud\text_weapons.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\hud\title_EvoGyre.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\planets\lavender.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\player\player_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\player\player_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\player\playershoot_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\player\playershoot_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\player\playerturn_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\player\playerturn_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\player\playerturnshoot_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\player\playerturnshoot_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\powerups\extralife.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\powerups\missileammo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\powerups\points.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\powerups\triplelaser.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\shots\bluelaser.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\shots\missile_1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\shots\missile_2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\shots\redlaser.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\shots\round_lg.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Assets\sprites\shots\round_sm.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

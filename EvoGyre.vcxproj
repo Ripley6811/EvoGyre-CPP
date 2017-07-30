@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\soil.1.16.0\build\native\soil.props" Condition="Exists('..\packages\soil.1.16.0\build\native\soil.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{EF050FF0-E5ED-4AD4-9D45-02787E226920}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>EvoGyre</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.14393.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Engine\Engine.cpp" />
+    <ClCompile Include="Engine\Input.cpp" />
+    <ClCompile Include="Engine\Vector3.cpp" />
+    <ClCompile Include="EvoGyre.cpp" />
+    <ClCompile Include="EvoGyre\Player.cpp" />
+    <ClCompile Include="EvoGyre\Projection.cpp" />
+    <ClCompile Include="Interface\Spaceship.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\audio\bullet_fwap.ogg" />
+    <None Include="Assets\audio\explosion_light.ogg" />
+    <None Include="Assets\audio\explosion_lower.ogg" />
+    <None Include="Assets\audio\hit_blip.ogg" />
+    <None Include="Assets\audio\kalmankone_clip.ogg" />
+    <None Include="Assets\images\evogyre.pack.atlas" />
+    <None Include="Assets\json\enemy_weapon_setup.json" />
+    <None Include="Assets\json\level_1.json" />
+    <None Include="Assets\json\primary_weapon_setup.json" />
+    <None Include="Assets\sprites\planets\planet.psd" />
+    <None Include="Engine\SOIL\support\FreeBasic\SOIL.bi" />
+    <None Include="packages.config" />
+    <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Engine\Engine.h" />
+    <ClInclude Include="Engine\Input.h" />
+    <ClInclude Include="Engine\Vector3.h" />
+    <ClInclude Include="EvoGyre\Constants.h" />
+    <ClInclude Include="EvoGyre\Projection.h" />
+    <ClInclude Include="EvoGyre\Player.h" />
+    <ClInclude Include="Interface\Spaceship.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\images\evogyre.pack.png" />
+    <Image Include="Assets\sprites\background\star_1.png" />
+    <Image Include="Assets\sprites\background\star_2.png" />
+    <Image Include="Assets\sprites\background\star_3.png" />
+    <Image Include="Assets\sprites\boss\bosscore_1.png" />
+    <Image Include="Assets\sprites\boss\bosscore_2.png" />
+    <Image Include="Assets\sprites\boss\bosscore_3.png" />
+    <Image Include="Assets\sprites\boss\bosscore_4.png" />
+    <Image Include="Assets\sprites\boss\bossdamage_1.png" />
+    <Image Include="Assets\sprites\boss\bossdamage_2.png" />
+    <Image Include="Assets\sprites\boss\bossdamage_3.png" />
+    <Image Include="Assets\sprites\boss\bossdamage_4.png" />
+    <Image Include="Assets\sprites\boss\boss_1.png" />
+    <Image Include="Assets\sprites\boss\boss_2.png" />
+    <Image Include="Assets\sprites\boss\boss_3.png" />
+    <Image Include="Assets\sprites\boss\boss_4.png" />
+    <Image Include="Assets\sprites\boss\turret.png" />
+    <Image Include="Assets\sprites\boss\turretshoot.png" />
+    <Image Include="Assets\sprites\boss\turretturn.png" />
+    <Image Include="Assets\sprites\boss\turretturnshoot.png" />
+    <Image Include="Assets\sprites\enemy\ball_inner.png" />
+    <Image Include="Assets\sprites\enemy\ball_outer.png" />
+    <Image Include="Assets\sprites\enemy\enemyshoot_1.png" />
+    <Image Include="Assets\sprites\enemy\enemyshoot_2.png" />
+    <Image Include="Assets\sprites\enemy\enemyturnshoot_1.png" />
+    <Image Include="Assets\sprites\enemy\enemyturnshoot_2.png" />
+    <Image Include="Assets\sprites\enemy\enemyturn_1.png" />
+    <Image Include="Assets\sprites\enemy\enemyturn_2.png" />
+    <Image Include="Assets\sprites\enemy\enemy_1.png" />
+    <Image Include="Assets\sprites\enemy\enemy_2.png" />
+    <Image Include="Assets\sprites\explosion\explosion_1.png" />
+    <Image Include="Assets\sprites\explosion\explosion_2.png" />
+    <Image Include="Assets\sprites\explosion\explosion_3.png" />
+    <Image Include="Assets\sprites\explosion\explosion_4.png" />
+    <Image Include="Assets\sprites\hud\bluepane.png" />
+    <Image Include="Assets\sprites\hud\bluepanedark.png" />
+    <Image Include="Assets\sprites\hud\right_arrow.png" />
+    <Image Include="Assets\sprites\hud\ship_fixed_button.png" />
+    <Image Include="Assets\sprites\hud\ship_rotate_button.png" />
+    <Image Include="Assets\sprites\hud\text_score.png" />
+    <Image Include="Assets\sprites\hud\text_shields.png" />
+    <Image Include="Assets\sprites\hud\text_weapons.png" />
+    <Image Include="Assets\sprites\hud\title_EvoGyre.png" />
+    <Image Include="Assets\sprites\planets\lavender.png" />
+    <Image Include="Assets\sprites\player\playershoot_1.png" />
+    <Image Include="Assets\sprites\player\playershoot_2.png" />
+    <Image Include="Assets\sprites\player\playerturnshoot_1.png" />
+    <Image Include="Assets\sprites\player\playerturnshoot_2.png" />
+    <Image Include="Assets\sprites\player\playerturn_1.png" />
+    <Image Include="Assets\sprites\player\playerturn_2.png" />
+    <Image Include="Assets\sprites\player\player_1.png" />
+    <Image Include="Assets\sprites\player\player_2.png" />
+    <Image Include="Assets\sprites\powerups\extralife.png" />
+    <Image Include="Assets\sprites\powerups\missileammo.png" />
+    <Image Include="Assets\sprites\powerups\points.png" />
+    <Image Include="Assets\sprites\powerups\triplelaser.png" />
+    <Image Include="Assets\sprites\shots\bluelaser.png" />
+    <Image Include="Assets\sprites\shots\missile_1.png" />
+    <Image Include="Assets\sprites\shots\missile_2.png" />
+    <Image Include="Assets\sprites\shots\redlaser.png" />
+    <Image Include="Assets\sprites\shots\round_lg.png" />
+    <Image Include="Assets\sprites\shots\round_sm.png" />
+    <Image Include="Assets\sprites\shots\sharp.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets" Condition="Exists('..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" />
+    <Import Project="..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets" Condition="Exists('..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nupengl.core.redist.0.1.0.1\build\native\nupengl.core.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\nupengl.core.0.1.0.1\build\native\nupengl.core.targets'))" />
+    <Error Condition="!Exists('..\packages\soil.1.16.0\build\native\soil.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\soil.1.16.0\build\native\soil.props'))" />
+  </Target>
+</Project>
