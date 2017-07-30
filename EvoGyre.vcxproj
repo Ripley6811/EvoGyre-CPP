@@ -146,6 +146,7 @@
     <ClCompile Include="EvoGyre.cpp" />
     <ClCompile Include="EvoGyre\Player.cpp" />
     <ClCompile Include="EvoGyre\Projection.cpp" />
+    <ClCompile Include="Engine\Sprite.cpp" />
     <ClCompile Include="Interface\Spaceship.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -170,6 +171,7 @@
     <ClInclude Include="EvoGyre\Constants.h" />
     <ClInclude Include="EvoGyre\Projection.h" />
     <ClInclude Include="EvoGyre\Player.h" />
+    <ClInclude Include="Engine\Sprite.h" />
     <ClInclude Include="Interface\Spaceship.h" />
   </ItemGroup>
   <ItemGroup>

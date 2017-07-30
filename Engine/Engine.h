@@ -26,6 +26,9 @@ public:
 	void Update();
 	void BeginRender();
 	void EndRender();
+
+	bool IsPaused();
+	void SetPause(bool _pause);
 	
 private:
 	static GLFWwindow* window;
@@ -33,6 +36,8 @@ private:
 	static const double FPS_LIMIT;
 	static double dt;
 	static double lastTime;
+
+	static bool pause;
 };
 
 #endif // !ENGINE

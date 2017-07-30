@@ -5,21 +5,21 @@
 #include "Projection.h"
 
 #include <iostream>
+#include <string>
 using namespace std;
 
-class Player : public Spaceship
+class Player : public Spaceship, public Sprite
 {
 public:
 	Player(string path);
+	Player(string path, float _x, float _y);
 	~Player() {}
 
 	Vector3 ToDisplay();
 
-	void Update();
-	void Render();
+	void Update() override;
 
 private:
-	Vector3 dspPos;
 
 };
 

@@ -7,6 +7,7 @@ int Engine::SCREEN_HEIGHT = 768;
 GLFWwindow* Engine::window = NULL;
 double Engine::dt = 0;
 double Engine::lastTime;
+bool Engine::pause = false;
 
 Engine::Engine()
 {
@@ -89,6 +90,16 @@ void Engine::BeginRender()
 void Engine::EndRender()
 {
 	glfwSwapBuffers(window);
+}
+
+bool Engine::IsPaused()
+{
+	return pause;
+}
+
+void Engine::SetPause(bool _pause)
+{
+	pause = _pause;
 }
 
 double Engine::GetDT()

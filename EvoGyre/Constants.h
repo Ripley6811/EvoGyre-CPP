@@ -30,7 +30,9 @@ namespace TEXT
 
 namespace FILENAME
 {
-	static const string PLAYER = "Assets/Art/playerB.png";
+	static const string DIR = "Assets/Art/";
+	static const string PLAYER = DIR + "playerB.png";
+	static const string PLANET = "Assets/sprites/planets/lavender.png";
 }
 
 namespace SETTING
