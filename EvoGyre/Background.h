@@ -7,6 +7,8 @@
 #include <string>
 using namespace std;
 
+typedef float degree;
+
 /**
  * Maintains the planet and galaxy background.
  */
@@ -18,7 +20,7 @@ public:
 	~Background() {}
 
 	void Update() override;
-	void Render();
+	void Render(const degree& game_rotation);
 
 private:
 	float x;

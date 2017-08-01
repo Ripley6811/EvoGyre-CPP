@@ -22,6 +22,16 @@ public:
 
 	bool operator==(const Vector3& other);
 	bool operator!=(const Vector3& other);
+
+	Vector3 setLength(float len);
+
+	Vector3 setLength2(float _len2);
+
+	Vector3 scl(float scalar);
+
+	float len();
+
+	float len2();
 };
 
 #endif

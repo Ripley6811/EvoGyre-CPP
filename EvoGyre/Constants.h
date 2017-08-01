@@ -45,14 +45,17 @@ namespace SETTING
 
 	static const int FUNNEL_CURVE = 3;
 	static const float VANISHING_STRETCH = 3;
-	static const int NUMBER_OF_FIXED_STARS = 256;
+	static const int NUMBER_OF_FIXED_STARS = 128;
 	static const int NUMBER_OF_SHOOTING_STARS = 32;
-	static const float SHOOTING_STAR_SPEED = 2;
+	static const float SHOOTING_STAR_SPEED = 6;
 	static const float PROJECTION_RADIUS = 460;  // Was 280 when centered
 	static const float MAP_SIZE_X = 1080;
 	static const float MAP_SIZE_Y_360 = 360;  // Do not change this
 	static const float DISPLAY_SIZE_X = 900;
 	static const float DISPLAY_SIZE_Y = 900;
+	static const float GAME_CENTER_X = DISPLAY_SIZE_X * 0.5f;
+	static const float GAME_CENTER_Y = DISPLAY_SIZE_Y * 0.6f;
+	static const float CENTER_DISPLACEMENT = 0.4f * PROJECTION_RADIUS;
 }
 
 #endif // !_CONSTANTS
