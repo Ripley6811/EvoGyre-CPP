@@ -6,10 +6,11 @@ Player::Player(string path) : Spaceship(), Sprite(path) {}
 Player::Player(string path, float _x, float _y) : 
 	Spaceship(), Sprite(path) 
 {
-	SetPos(Vector3(_x, _y, 0));
+	Spaceship::SetPos(Vector3(_x, _y, 0));
+	Sprite::SetScale(Vector3(1.5, 1, 1));
 }
 
-Vector3 Player::ToDisplay()
+inline Vector3 Player::GetDisplayPos()
 {
 	return GAME_PROJECTION::mapPointToDisplay(Spaceship::pos);
 }
@@ -24,7 +25,18 @@ void Player::Update()
 	{
 		Spaceship::pos.y += 1;
 	}
-	//pos.y += 1; // 60 * Engine::GetDT();
-	this->Sprite::SetPosition(GAME_PROJECTION::mapPointToDisplay(this->Spaceship::GetPos()));
-	//cout << 100 * Engine::GetDT() << endl;
+
+	if (Spaceship::pos.y < 270 - 45)
+	{
+		Spaceship::pos.y += 1;
+	}
+
+	if (Spaceship::pos.y > 270 + 45)
+	{
+		Spaceship::pos.y -= 1;
+	}
+
+	// Send sprite display update
+	Sprite::SetPosition(GetDisplayPos());
+	Sprite::SetRotation(Spaceship::pos.y + 90);
 }

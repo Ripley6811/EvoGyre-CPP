@@ -7,6 +7,9 @@
 #include <string>
 using namespace std;
 
+/**
+ * Base class for objects that move and take damage.
+ */
 class Spaceship
 {
 public:

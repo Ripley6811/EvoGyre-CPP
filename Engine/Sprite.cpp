@@ -53,7 +53,7 @@ void Sprite::SetScale(Vector3 v)
 void Sprite::Render()
 {
 	glEnable(GL_TEXTURE_2D);
-	glBindTexture(GL_TEXTURE_2D, textureID);
+	glBindTexture(GL_TEXTURE_2D, this->textureID);
 	glLoadIdentity();
 
 	// Translate -> Rotate -> Scale

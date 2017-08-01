@@ -1,6 +1,7 @@
 #include "Engine\Engine.h"
 #include "Engine\Input.h"
 #include "EvoGyre\Player.h"
+#include "EvoGyre\Background.h"
 #include "EvoGyre\Constants.h"
 
 int main()
@@ -10,23 +11,26 @@ int main()
 
 	Engine engine;
 
-	engine.Initialize("EvoGyre!", (int) SETTING::GAME_PLAY_SIZE, (int) SETTING::GAME_PLAY_SIZE);
+	engine.Initialize("EvoGyre!", (int) SETTING::DISPLAY_SIZE_X, (int) SETTING::DISPLAY_SIZE_X);
 
-	Player player(FILENAME::PLAYER, 1000, 10);
+	Player player(FILENAME::PLAYER, 1000, 270);
+	Background background(FILENAME::PLANET);
 
 	while (true)
 	{
 		engine.Update();
-		cout << engine.GetDT() << endl;
+
 		if (!engine.IsPaused())
 		{
 			player.Update();
+			background.Update();
 		}
 
 		engine.BeginRender();
-		player.Render();
-
-
+		{
+			player.Render();
+			background.Render();
+		}
 		engine.EndRender();
 	}
 

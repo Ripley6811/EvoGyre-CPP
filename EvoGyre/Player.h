@@ -15,7 +15,7 @@ public:
 	Player(string path, float _x, float _y);
 	~Player() {}
 
-	Vector3 ToDisplay();
+	Vector3 GetDisplayPos();
 
 	void Update() override;
 

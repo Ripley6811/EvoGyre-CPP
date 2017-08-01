@@ -144,6 +144,7 @@
     <ClCompile Include="Engine\Input.cpp" />
     <ClCompile Include="Engine\Vector3.cpp" />
     <ClCompile Include="EvoGyre.cpp" />
+    <ClCompile Include="EvoGyre\Background.cpp" />
     <ClCompile Include="EvoGyre\Player.cpp" />
     <ClCompile Include="EvoGyre\Projection.cpp" />
     <ClCompile Include="Engine\Sprite.cpp" />
@@ -168,6 +169,7 @@
     <ClInclude Include="Engine\Engine.h" />
     <ClInclude Include="Engine\Input.h" />
     <ClInclude Include="Engine\Vector3.h" />
+    <ClInclude Include="EvoGyre\Background.h" />
     <ClInclude Include="EvoGyre\Constants.h" />
     <ClInclude Include="EvoGyre\Projection.h" />
     <ClInclude Include="EvoGyre\Player.h" />
