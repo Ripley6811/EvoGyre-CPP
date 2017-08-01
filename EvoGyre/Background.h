@@ -23,7 +23,8 @@ public:
 private:
 	float x;
 	float y;
-	Vector3 stars[SETTING::NUMBER_OF_STARS];
+	Vector3 fixedStars[SETTING::NUMBER_OF_FIXED_STARS];
+	Vector3 shootingStars[SETTING::NUMBER_OF_SHOOTING_STARS];
 };
 
 #endif
