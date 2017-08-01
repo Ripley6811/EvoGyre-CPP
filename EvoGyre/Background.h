@@ -2,6 +2,8 @@
 #define _BACKGROUND
 
 #include "../Engine/Sprite.h"
+#include "Constants.h"
+
 #include <string>
 using namespace std;
 
@@ -16,10 +18,12 @@ public:
 	~Background() {}
 
 	void Update() override;
+	void Render();
 
 private:
 	float x;
 	float y;
+	Vector3 stars[SETTING::NUMBER_OF_STARS];
 };
 
 #endif

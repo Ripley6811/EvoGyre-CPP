@@ -6,6 +6,8 @@
 
 int main()
 {
+	static float game_rotation = 0;
+
 	cout << "Running EvoGyre..." << endl;
 	cout << TEXT::KEY_CONTROLS << endl;
 
@@ -27,9 +29,9 @@ int main()
 		}
 
 		engine.BeginRender();
-		{
-			player.Render();
+		{ // RENDER ALL ITEMS
 			background.Render();
+			player.Render();
 		}
 		engine.EndRender();
 	}

@@ -8,7 +8,7 @@
 using namespace std;
 
 /**
- * Base class for objects that move and take damage.
+ * Base class for all spaceship objects that move and take damage.
  */
 class Spaceship
 {
