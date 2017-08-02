@@ -142,9 +142,11 @@
   <ItemGroup>
     <ClCompile Include="Engine\Engine.cpp" />
     <ClCompile Include="Engine\Input.cpp" />
+    <ClCompile Include="Engine\Texture.cpp" />
     <ClCompile Include="Engine\Vector3.cpp" />
     <ClCompile Include="EvoGyre.cpp" />
     <ClCompile Include="EvoGyre\Background.cpp" />
+    <ClCompile Include="EvoGyre\BulletManager.cpp" />
     <ClCompile Include="EvoGyre\Player.cpp" />
     <ClCompile Include="EvoGyre\Projection.cpp" />
     <ClCompile Include="Engine\Sprite.cpp" />
@@ -168,8 +170,10 @@
   <ItemGroup>
     <ClInclude Include="Engine\Engine.h" />
     <ClInclude Include="Engine\Input.h" />
+    <ClInclude Include="Engine\Texture.h" />
     <ClInclude Include="Engine\Vector3.h" />
     <ClInclude Include="EvoGyre\Background.h" />
+    <ClInclude Include="EvoGyre\BulletManager.h" />
     <ClInclude Include="EvoGyre\Constants.h" />
     <ClInclude Include="EvoGyre\Projection.h" />
     <ClInclude Include="EvoGyre\Player.h" />

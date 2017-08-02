@@ -33,7 +33,13 @@ namespace FILENAME
 	static const string DIR = "Assets/Art/";
 	static const string PLAYER = DIR + "playerB.png";
 	static const string PLANET = "Assets/sprites/planets/lavender.png";
-	static const string SHOOTING_STAR = "Assets/sprites/shots/sharp.png";
+
+	// Bullets
+	static const string BLUELASER = "Assets/sprites/shots/bluelaser.png";
+	static const string REDLASER = "Assets/sprites/shots/redlaser.png";
+	static const string ROUND_LG = "Assets/sprites/shots/round_lg.png";
+	static const string ROUND_SM = "Assets/sprites/shots/round_sm.png";
+	static const string SHARPLASER = "Assets/sprites/shots/sharp.png";
 }
 
 namespace SETTING
@@ -56,6 +62,12 @@ namespace SETTING
 	static const float GAME_CENTER_X = DISPLAY_SIZE_X * 0.5f;
 	static const float GAME_CENTER_Y = DISPLAY_SIZE_Y * 0.6f;
 	static const float CENTER_DISPLACEMENT = 0.4f * PROJECTION_RADIUS;
+
+}
+
+namespace PLAYER_WEAPONS
+{
+	
 }
 
 #endif // !_CONSTANTS

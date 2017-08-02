@@ -3,6 +3,7 @@
 
 #include "../Interface/Spaceship.h"
 #include "Projection.h"
+#include "BulletManager.h"
 
 #include <iostream>
 #include <string>
@@ -18,6 +19,9 @@ public:
 	Vector3 GetDisplayPos();
 
 	void Update() override;
+	void Render();
+
+	BulletManager bulletManager;
 
 private:
 

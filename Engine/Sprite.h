@@ -4,6 +4,7 @@
 #include "GLFW/glfw3.h"
 #include "Vector3.h"
 #include "soil.h"
+#include "Texture.h"
 
 #include <iostream>
 #include <string>
@@ -13,7 +14,7 @@ using namespace std;
  * This class holds a texture and positioning data for display.
  * This is intended to be inherited or used in other classes.
  */
-class Sprite
+class Sprite : public Texture
 {
 public:
 	Sprite(string imagePath);
@@ -33,10 +34,6 @@ private:
 	float rot;
 	Vector3 scale;
 	Vector3 size;
-
-	int textureID;
-	int textureWidth;
-	int textureHeight;
 };
 
 #endif
