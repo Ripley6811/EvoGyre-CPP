@@ -45,8 +45,8 @@ namespace SETTING
 
 	static const int FUNNEL_CURVE = 3;
 	static const float VANISHING_STRETCH = 3;
-	static const int NUMBER_OF_FIXED_STARS = 128;
-	static const int NUMBER_OF_SHOOTING_STARS = 32;
+	static const int NUMBER_OF_FIXED_STARS = 256;
+	static const int NUMBER_OF_SHOOTING_STARS = 128;
 	static const float SHOOTING_STAR_SPEED = 6;
 	static const float PROJECTION_RADIUS = 460;  // Was 280 when centered
 	static const float MAP_SIZE_X = 1080;
