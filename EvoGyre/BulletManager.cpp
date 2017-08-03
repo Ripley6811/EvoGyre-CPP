@@ -5,21 +5,15 @@
 #include <iostream>
 using namespace std;
 
+
 BulletManager::BulletManager()
 {
-	names = { FILENAME::BLUELASER, FILENAME::REDLASER };
-	textures.reserve(names.size());
-	cout << "FILENAMES size:" << names.size() << endl;
-	for (string filename : names)
-	{
-		cout << filename << endl;
-		textures.push_back(Texture(filename));
-	}
 }
 
-void BulletManager::AddBullet(int level, float x, float y, float vx, float vy)
+void BulletManager::AddBullet(const Texture & _t, float x, float y, float vx, float vy)
 {
-	bullets.push_back(bullet(level, x, y, vx, vy));
+	bullets.push_back(bullet(_t, x, y, vx, vy));
+	cout << bullets.size() << endl;
 }
 
 void BulletManager::Update()
@@ -52,6 +46,6 @@ void BulletManager::Render()
 		Vector3 dspPtv = GAME_PROJECTION::mapPointToDisplay(Vector3(b.x-b.vx, b.y-b.vy, 0.f));
 		float theta = 90.f + atan2(dspPt.y - dspPtv.y, dspPt.x - dspPtv.x) * 180.f / 3.14159f;
 		float depth = b.x / SETTING::MAP_SIZE_X;
-		textures[b.level].Render(dspPt.x, dspPt.y, theta, pow(0.5f * depth, 1), pow(depth, 1));
+		b.texture.Render(dspPt.x, dspPt.y, theta, pow(depth, 2), pow(depth, 2));
 	}
 }

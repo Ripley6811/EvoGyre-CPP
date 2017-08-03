@@ -178,6 +178,7 @@
     <ClInclude Include="EvoGyre\Projection.h" />
     <ClInclude Include="EvoGyre\Player.h" />
     <ClInclude Include="Engine\Sprite.h" />
+    <ClInclude Include="EvoGyre\Weapons.h" />
     <ClInclude Include="Interface\Spaceship.h" />
   </ItemGroup>
   <ItemGroup>
