@@ -17,7 +17,7 @@ public:
 
 	void AddBullet(const Texture & _t, float x, float y, float vx, float vy);
 
-	void Update();
+	void Update(const double dt);
 	void Render();
 
 private:

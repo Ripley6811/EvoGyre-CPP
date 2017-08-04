@@ -23,13 +23,14 @@ int main()
 	while (true)
 	{
 		engine.Update();
+		double dt = 60.0 * engine.GetDT();  // Around 1.0
 
 		if (!engine.IsPaused())
 		{
-			player.Update();
+			player.Update(dt);
 			player_rotation = player.GetPos().y;
 			GAME_PROJECTION::SetVanishingPoint(player_rotation + 180.f);
-			background.Update();
+			background.Update(dt);
 		}
 
 		engine.BeginRender();

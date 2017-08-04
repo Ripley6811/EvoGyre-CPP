@@ -150,7 +150,8 @@
     <ClCompile Include="EvoGyre\Player.cpp" />
     <ClCompile Include="EvoGyre\Projection.cpp" />
     <ClCompile Include="Engine\Sprite.cpp" />
-    <ClCompile Include="Interface\Spaceship.cpp" />
+    <ClCompile Include="Spaceship\Navigation.cpp" />
+    <ClCompile Include="Spaceship\Tactical.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\audio\bullet_fwap.ogg" />
@@ -170,6 +171,7 @@
   <ItemGroup>
     <ClInclude Include="Engine\Engine.h" />
     <ClInclude Include="Engine\Input.h" />
+    <ClInclude Include="Spaceship\Tactical.h" />
     <ClInclude Include="Engine\Texture.h" />
     <ClInclude Include="Engine\Vector3.h" />
     <ClInclude Include="EvoGyre\Background.h" />
@@ -179,7 +181,7 @@
     <ClInclude Include="EvoGyre\Player.h" />
     <ClInclude Include="Engine\Sprite.h" />
     <ClInclude Include="EvoGyre\Weapons.h" />
-    <ClInclude Include="Interface\Spaceship.h" />
+    <ClInclude Include="Spaceship\Navigation.h" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="Assets\images\evogyre.pack.png" />

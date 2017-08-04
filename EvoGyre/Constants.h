@@ -48,6 +48,9 @@ namespace SETTING
 	static const float PLAYER_START_ANGLE = 290;
 	static const float SHIELD_RADIUS = 20;
 	static const float SHIELD_WIDTH_MULTIPLIER = 1.3f;
+	static const float PLAYER_ACCELERATION = 0.3f;
+	static const float PLAYER_MAX_VELOCITY = 2.f;
+	static const float PLAYER_MOTION_FRICTION = 0.88f;
 
 	static const int FUNNEL_CURVE = 3;
 	static const float VANISHING_STRETCH = 3;
@@ -60,8 +63,8 @@ namespace SETTING
 	static const float DISPLAY_SIZE_X = 900;
 	static const float DISPLAY_SIZE_Y = 900;
 	static const float GAME_CENTER_X = DISPLAY_SIZE_X * 0.5f;
-	static const float GAME_CENTER_Y = DISPLAY_SIZE_Y * 0.6f;
-	static const float CENTER_DISPLACEMENT = 0.4f * PROJECTION_RADIUS;
+	static const float GAME_CENTER_Y = DISPLAY_SIZE_Y * 0.5f;
+	static const float CENTER_DISPLACEMENT = 0.6f * PROJECTION_RADIUS;
 
 }
 

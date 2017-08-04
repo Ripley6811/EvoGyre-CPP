@@ -1,9 +1,9 @@
 #ifndef _PLAYER
 #define _PLAYER
 
-#include "../Interface/Spaceship.h"
+#include "../Spaceship/Navigation.h"
+#include "../Spaceship/Tactical.h"
 #include "Projection.h"
-#include "BulletManager.h"
 #include "Weapons.h"
 
 #include <iostream>
@@ -11,7 +11,7 @@
 using namespace std;
 
 
-class Player : public Spaceship, public Sprite
+class Player : public Nav, public Tac, public Sprite
 {
 public:
 	Player(string path);
@@ -19,21 +19,13 @@ public:
 	~Player() {}
 
 	Vector3 GetDisplayPos();
-	void SetWeaponLevel(int newLevel);
 	void InitWeaponSystems();
-	void FireWeapon();
 
-	void Update() override;
+	void Update(double dt);
 	void Render();
-
-	BulletManager bulletManager;
-
-
-
+	
 private:
-	float weaponCooldown;
-	int weaponLevel;
-	vector<weaponSystem> weaponSystems;
+
 };
 
 #endif

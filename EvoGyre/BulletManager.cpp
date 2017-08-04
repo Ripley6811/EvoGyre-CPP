@@ -16,7 +16,7 @@ void BulletManager::AddBullet(const Texture & _t, float x, float y, float vx, fl
 	cout << bullets.size() << endl;
 }
 
-void BulletManager::Update()
+void BulletManager::Update(const double dt)
 {
 	while (!bullets.empty() && !bullets.front().isActive)
 	{
@@ -26,8 +26,8 @@ void BulletManager::Update()
 	{
 		b.lastx = b.x;
 		b.lasty = b.y;
-		b.x += b.vx;
-		b.y += b.vy;
+		b.x += b.vx * (float) dt;
+		b.y += b.vy * (float) dt;
 		if (b.y < 0.f) b.y += 360.f;
 		if (b.y >= 360.f) b.y -= 360.f;
 		if (b.x < SETTING::MAP_SIZE_X * 0.1f)

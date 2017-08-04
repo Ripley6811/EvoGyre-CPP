@@ -26,7 +26,6 @@ public:
 	void SetScale(Vector3 v);
 	void SetScale(float x);  // All set to x
 
-	virtual void Update() = 0;
 	virtual void Render();
 
 private:

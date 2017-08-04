@@ -12,7 +12,7 @@ Background::Background(string path, float _x, float _y) :
 	// Stars
 	for (Vector3& star : fixedStars)
 	{
-		star.x = 1.6f * SETTING::GAME_CENTER_X * std::pow((float)rand() / (float)RAND_MAX, 0.5);
+		star.x = 1.6f * SETTING::GAME_CENTER_X * (float) std::pow((float)rand() / (float)RAND_MAX, 0.5);
 		star.y = (float)(rand() % (int)SETTING::MAP_SIZE_Y_360);
 	}
 	for (Vector3& star : shootingStars)
@@ -25,7 +25,7 @@ Background::Background(string path, float _x, float _y) :
 	Sprite::SetScale(0.5f);
 }
 
-void Background::Update()
+void Background::Update(double dt)
 {
 	// Rotate stars
 	for (Vector3& star : fixedStars)

@@ -19,7 +19,7 @@ public:
 	Background(string path, float _x, float _y);
 	~Background() {}
 
-	void Update() override;
+	void Update(double dt);
 	void Render(const degree& game_rotation);
 
 private:
