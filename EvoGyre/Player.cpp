@@ -5,7 +5,7 @@
 
 Player::Player(string path) : Spaceship(), Sprite(path) {}
 Player::Player(string path, float _x, float _y) :
-	Spaceship(), Sprite(path), bulletManager(), weaponLevel(1), weaponCooldown(0)
+	Spaceship(), Sprite(path), bulletManager(), weaponLevel(0), weaponCooldown(0)
 {
 	Spaceship::SetPos(Vector3(_x, _y, 0));
 	Sprite::SetScale(Vector3(1.5, 1, 1));
@@ -26,6 +26,23 @@ void Player::InitWeaponSystems()
 			weaponHardpoint(-9.f, -2.2f, -10.f, -0.1f),
 			weaponHardpoint(-8.f, 2.2f, -10.f, 0.4f),
 			weaponHardpoint(-8.f, -2.2f, -10.f, -0.4f),
+		})
+		);
+	weaponSystems.push_back(
+		weaponSystem(FILENAME::REDLASER, 0.16f, {
+			weaponHardpoint(-7.f, 2.2f, -10.f, 0.2f),
+			weaponHardpoint(-15.f, 0.0f, -10.f, 0.f),
+			weaponHardpoint(-9.f, -2.2f, -10.f, -0.2f),
+		})
+		);
+	weaponSystems.push_back(
+		weaponSystem(FILENAME::REDLASER, 0.16f, {
+			weaponHardpoint(-8.f, 2.2f, -10.f, 0.4f),
+			weaponHardpoint(-9.f, 2.2f, -10.f, 0.2f),
+			weaponHardpoint(-14.f, 0.0f, -10.f, 0.1f),
+			weaponHardpoint(-16.f, 0.0f, -10.f, -0.1f),
+			weaponHardpoint(-8.f, -2.2f, -10.f, -0.2f),
+			weaponHardpoint(-9.f, -2.2f, -10.f, -0.4f),
 		})
 		);
 }
